@@ -163,12 +163,6 @@ const Invoices: NextPage = () => {
                   size="medium"
                   margin="none"
                 />
-                <div className="absolute top-[55px] left-[361px] w-[136px] h-[19px] text-base text-lightslategray">
-                  <div className="absolute top-[0px] left-[0px]">
-                    <span>{`Invoice From `}</span>
-                    <span className="text-gray-100">MYM</span>
-                  </div>
-                </div>
                 <TextField
                   className="[border:none] bg-[transparent] absolute top-[99px] left-[0px]"
                   sx={{ width: 227 }}
@@ -620,9 +614,9 @@ const Invoices: NextPage = () => {
           <div className="absolute top-[62px] left-[5px] font-medium flex items-center justify-center w-[94px] h-[15px]">
             Subscription
           </div>
-          <img className="relative w-[29.45px] h-9" alt="" src="/union1.svg" />
+          <img className="absolute h-[37.89%] w-[27.69%] top-[17.89%] right-[35.77%] bottom-[44.21%] left-[36.54%] max-w-full overflow-hidden max-h-full" alt="" src="/union1.svg" />
           <img
-            className="relative w-[11px] h-[9.22px]"
+            className="absolute h-[16.89%] w-[11.69%] top-[34.89%] right-[36.77%] bottom-[65.21%] left-[48.54%] overflow-hidden"
             alt=""
             src="/subtract1.svg"
           />
