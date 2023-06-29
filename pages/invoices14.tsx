@@ -126,27 +126,27 @@ const Invoices14: NextPage = () => {
               <DownOutlined />
             </Button>
           </Dropdown>
-          <div className="absolute top-[296px] left-[980px] w-[157px] h-[85px]">
-            <div className="absolute top-[0px] left-[0px]">Total Received</div>
-            <b className="absolute top-[34px] left-[51px] text-23xl text-steelblue-100 text-left">
-              $0.00
-            </b>
-          </div>
-          <div className="absolute top-[621px] left-[1031px] w-[106px] h-[85px]">
-            <div className="absolute top-[0px] left-[8px]">This Year</div>
+          <div className="absolute top-[179px] left-[981px] w-[735px] h-[527px]">
+            <div className="absolute top-[0px] left-[0px] text-left">Total Received</div>
             <b className="absolute top-[34px] left-[0px] text-23xl text-steelblue-100 text-left">
               $0.00
             </b>
           </div>
-          <div className="absolute top-[516px] left-[1015px] w-[122px] h-[85px]">
-            <div className="absolute top-[0px] left-[0px]">Last Month</div>
+          <div className="absolute top-[279px] left-[981px] w-[735px] h-[527px]">
+            <div className="absolute top-[0px] left-[0px] text-left">This Year</div>
+            <b className="absolute top-[34px] left-[0px] text-23xl text-steelblue-100 text-left">
+              $0.00
+            </b>
+          </div>
+          <div className="absolute top-[479px] left-[981px] w-[735px] h-[527px]">
+            <div className="absolute top-[0px] left-[0px] text-left">Last Month</div>
             <b className="absolute top-[34px] left-[16px] text-23xl text-steelblue-100 text-left">
               $0.00
             </b>
           </div>
-          <div className="absolute top-[401px] left-[1016px] w-[121px] h-[85px]">
-            <div className="absolute top-[0px] left-[0px]">This Month</div>
-            <b className="absolute top-[34px] left-[15px] text-23xl text-steelblue-100 text-left">
+          <div className="absolute top-[379px] left-[981px] w-[735px] h-[527px]">
+            <div className="absolute top-[0px] left-[0px] text-left">This Month</div>
+            <b className="absolute top-[34px] left-[16px] text-23xl text-steelblue-100 text-left">
               $0.00
             </b>
           </div>
@@ -421,9 +421,9 @@ const Invoices14: NextPage = () => {
           <div className="absolute top-[62px] left-[5px] font-medium flex items-center justify-center w-[94px] h-[15px]">
             Subscription
           </div>
-          <img className="relative w-[29.45px] h-9" alt="" src="/union.svg" />
+          <img className="absolute h-[37.89%] w-[27.69%] top-[17.89%] right-[35.77%] bottom-[44.21%] left-[36.54%] max-w-full overflow-hidden max-h-full" alt="" src="/union.svg" />
           <img
-            className="relative w-[11px] h-[9.22px]"
+            className="absolute h-[16.89%] w-[11.69%] top-[34.89%] right-[36.77%] bottom-[65.21%] left-[48.54%] overflow-hidden"
             alt=""
             src="/subtract1.svg"
           />
