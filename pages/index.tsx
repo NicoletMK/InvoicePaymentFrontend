@@ -9,37 +9,10 @@ import {
   InputAdornment,
   Button as MuiButton,
 } from "@mui/material";
-import {
-  Menu as AntMenu,
-  Dropdown as AntDropdown,
-  Button as AntButton,
-} from "antd";
-import {
-  DownOutlined,
-  ArrowLeftOutlined,
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CheckOutlined,
-  ClockCircleOutlined,
-  CloseOutlined,
-  DeleteOutlined,
-  EditOutlined,
-  ExclamationCircleOutlined,
-  HeartOutlined,
-  LeftOutlined,
-  LockOutlined,
-  MailOutlined,
-  PaperClipOutlined,
-  PhoneOutlined,
-  QuestionCircleOutlined,
-  ReloadOutlined,
-  RightOutlined,
-  SearchOutlined,
-  SendOutlined,
-  ShareAltOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
 import Link from "next/link";
+import "antd/dist/antd.min.css";
+import DropdownMenu from "../components/dropdown";
+
 
 const Invoices: NextPage = () => {
   return (
@@ -197,20 +170,17 @@ const Invoices: NextPage = () => {
                   margin="none"
                 />
               </div>
+
               <div className="absolute top-[467px] left-[4px] text-xs text-lightslategray flex items-center w-[286px]">
                 <span className="[line-break:anywhere] w-full">
-                  <span>{`Automatically pay invoice with the card on file for this client. `}</span>
-                  <b>Note: Auto Pay</b>
-                  <span>
-                    {" "}
-                    only works for the clients who have already paid through
-                    AgenciFlow.
-                  </span>
+                  <span>{`Automatically pay invoice with the card on file for this client. Note: only works for the clients who have already paid through AgenciFlow. `}</span>
                 </span>
+
               </div>
               <div className="absolute top-[439px] left-[399px] text-lightslategray">
                 Remove Payment
               </div>
+
               <div className="absolute top-[-5px] left-[0px] w-[576px] h-[168px] text-5xl">
                 <b className="absolute top-[0px] left-[0px]">Type</b>
                 <b className="absolute top-[0px] left-[346px]">Currency</b>
@@ -220,34 +190,11 @@ const Invoices: NextPage = () => {
                   labelPlacement="end"
                   control={<Radio color="primary" checked size="small" />}
                 />
-                <AntDropdown
-                  className="absolute top-[39px] left-[346px]"
-                  overlay={
-                    <AntMenu>
-                      {(
-                        [
-                          { value: "EUR" },
-                          { value: "RMB" },
-                          { value: "INR" },
-                        ] as any
-                      ).map((option: any, index: number) => (
-                        <AntMenu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
-                        </AntMenu.Item>
-                      ))}
-                    </AntMenu>
-                  }
-                  placement="bottomLeft"
-                  trigger={["hover"]}
-                  arrow={true}
-                >
-                  <AntButton onClick={(e) => e.preventDefault()}>
-                    {`USD `}
-                    <DownOutlined />
-                  </AntButton>
-                </AntDropdown>
+
+              <div  className="absolute top-[39px] left-[346px]">
+                <DropdownMenu /> 
+              </div>
+
                 <FormControlLabel
                   className="absolute top-[99px] left-[0px]"
                   label="Retainers"
@@ -285,15 +232,17 @@ const Invoices: NextPage = () => {
                 src="/vector10.svg"
               />
             </div>
+
             <div className="absolute top-[190px] left-[259px]" />
             <div className="absolute top-[452px] left-[31px] w-[115px] h-10 text-lightslategray">
-              <div className="absolute top-[11px] left-[50px]">Auto Pay</div>
+              <div className="absolute top-[11px] left-[50px]">AutoPay</div>
               <img
                 className="absolute top-[0px] left-[0px] w-10 h-10 overflow-hidden"
                 alt=""
                 src="/toggle.svg"
               />
             </div>
+
             <img
               className="absolute top-[453px] left-[376px] w-10 h-10 overflow-hidden"
               alt=""
